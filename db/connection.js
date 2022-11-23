@@ -1,6 +1,9 @@
 const { connect } = require('mongoose');
 
-connect('mongodb+srv://caio:Cavalcante12345.@main.ypjd0uo.mongodb.net/expense?retryWrites=true&w=majority',
+const dbName = 'name';
+const dbPassword = 'password'
+
+connect(`mongodb+srv://${dbName}:${dbPassword}.@main.ypjd0uo.mongodb.net/expense?retryWrites=true&w=majority`,
 {
     useNewUrlParser: true,
     useUnifiedTopology: true
